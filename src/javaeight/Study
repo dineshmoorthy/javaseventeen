@@ -1,0 +1,129 @@
+tips
+----
+try to use predefined methods like isempty,isblank, count(), Math.sqrt(.....
+
+search for ->  // remember below syntax 
+Few code syntax to remember
+-----------------------
+
+1) executorservice --> callable -->  future (= excutor submit callable ) --> future get
+2) anagramMap.computeIfAbsent(key, k -> new ArrayList<>()).add(word);
+3) Arrays.aslist() --> List<List<String>> list = Arrays.asList(Arrays.asList("a"), Arrays.asList("b"));
+	List.of()
+	Stream.of() --> List<String> myList = Stream.of("a", "b").map(String::toUpperCase).collect(Collectors.toList());
+	
+4) lambda + comparator
+	method reference+ comparator
+	
+	
+5) iterator --> keyset() --> while loop --> has next()
+	map.entry --> map.entrySet() / keyse()--> for each 	
+
+
+6) Map<String, Integer> wordCount = new HashMap<>();
+
+	    for (String word : words) {
+	        wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
+	    }	
+	 
+7) 		sorted.sort(Comparator.comparing((Person p) -> p.lastName).thenComparing(p -> p.firstName)
+				.thenComparingInt(p -> p.age));
+				
+8) 	poll() --> method will remove the element
+	peek() --> method will just show the element			
+	
+	
+9) 
+Parseint() - only string
+		   - returns primitive int
+Valueof()  - both string and int
+		   - returns Object and wrapper class
+		   
+		   
+10) in custom class only after overriding equals and hashcode method --> we can use in collections objects like set, list, map --> if you want to sort the object.
+
+11) List<RelianceEmp> newlist = Stream.of(reliancelist).collect(Collectors.toCollection(ArrayList:: new));
+		   
+12) 
+| Concept                | Explanation                                                          |
+| ---------------------- | -------------------------------------------------------------------- |
+| `Arrays.asList()`      | Returns fixed-size list backed by the array. Add/remove not allowed. |
+| `new ArrayList<>(...)` | Creates a resizable list (safe to add/remove).                       |
+| `Arrays.stream(arr)`   | Converts an array to stream (works with primitives).                 |
+| `.boxed()`             | Converts primitive `int` to wrapper `Integer`.                       |
+| Stream filter          | Filters values based on a condition (`f -> f % 2 == 0`).             |
+
+
+13)
+1️⃣ String[] — Array
+	A String[] is a fixed-size array that holds elements of type String.
+2️⃣ List<String> — Collection (Interface)
+	A List<String> is a 
+ collection from the Java Collections Framework.
+	It can grow or shrink, and provides many utility methods.
+3️⃣ String... — Varargs (Variable Arguments)
+	Varargs (...) means the method can take zero or more arguments of that type.
+
+14) flatMap() flattens the nested structure.Combine with map() and collect()
+
+
+15)
+write code 
+-----------
+
+recursive
+singleton instance class
+final class
+static method
+comparable
+comparator
+utilise predefined methods
+executors service
+interview coding examples 
+callable, supplier, consumer, predicate, function, runnable
+collections
+Excep;tions
+own functional interface
+MultiArray
+future, completablefuture
+deadlock
+custom exception
+
+
+16) Below understanding clear should be 
+	predicate, function, consumer, supplier, runnable
+	reference swap, map vs flatmap , map vs filter
+	
+17) terms
+inferring type arguments.
+flatten the nested lists	
+
+
+18)
+map() --> transforms each element of a stream into exactly one new element.
+
+flatMap() flattens the nested structure.
+It takes each element (in this case, each List<String>), turns it into a Stream, and then merges all those streams into one continuous stream.
+
+| Feature        | `map()`                                         | `flatMap()`                             |
+| -------------- | ----------------------------------------------- | --------------------------------------- |
+| Transforms     | One element → One element                       | One element → Many elements (flattened) |
+| Resulting type | Stream of the same shape (may be nested)        | Stream flattened to one level           |
+| Example here   | `Stream<List<String>> → Stream<Stream<String>>` | `Stream<List<String>> → Stream<String>` |
+| Use case       | Change each element                             | Flatten nested structures               |
+
+
+🧠 Quick analogy
+Think of map() vs flatMap() like a box of boxes:
+map() opens each box, performs something, then puts the box back — you still have boxes inside boxes.
+flatMap() opens all the boxes and pours everything into one big box.
+
+19)
+
+Collision --> Two keys map to same hash bucket
+
+
+20) A final class is simply a class that can't be extended.
+
+
+
