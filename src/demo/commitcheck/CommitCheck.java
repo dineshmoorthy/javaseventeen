@@ -17,6 +17,6 @@ public class CommitCheck {
     }
 
     public void supriyaChange1() {
-        System.out.println("supriya change 1");
+        System.out.println("supriya change 2");
     }
 }
