@@ -12,4 +12,7 @@ public class CommitCheck {
     public void audit() {
         System.out.println("audit");
     }
+    public void finalCheck() {
+        System.out.println("final check");
+    }
 }
