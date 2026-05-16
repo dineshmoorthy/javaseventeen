@@ -15,4 +15,8 @@ public class CommitCheck {
     public void finalCheck() {
         System.out.println("final check");
     }
+
+    public void dineshChange() {
+        System.out.println("dinesh changes");
+    }
 }
