@@ -3,6 +3,6 @@ package com.demo.commitcheck;
 public class CommitCheck {
     private int counter = 0;
     public void process() {
-        System.out.println("Version 3");
+        System.out.println("Version 4");
     }
 }
