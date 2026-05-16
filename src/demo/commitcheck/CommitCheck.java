@@ -5,4 +5,8 @@ public class CommitCheck {
     public void process() {
         System.out.println("Version 4");
     }
+
+    public void validate() {
+        System.out.println("validate");
+    }
 }
