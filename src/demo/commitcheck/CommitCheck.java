@@ -9,4 +9,7 @@ public class CommitCheck {
     public void validate() {
         System.out.println("validate");
     }
+    public void audit() {
+        System.out.println("audit");
+    }
 }
