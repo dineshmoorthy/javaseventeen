@@ -19,4 +19,8 @@ public class CommitCheck {
     public void supriyaChange1() {
         System.out.println("supriya change 2");
     }
+
+    public void secondDevelopCommit() {
+        System.out.println("dinesh second time develop commit");
+    }
 }
